@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: #c2d3ff;
+  --lightred: #ff5263;
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  height: 100%;
+}
+
+button {
+  font-size: inherit;
+}
+
+.wrapper {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.wrapper > p {
+  margin-bottom: 2em;
+}
+
+h1 {
+  color: var(--gray);
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+form {
+  max-width: 562px;
+  margin: 0 auto 2em auto;
+}
+
+form > input[type=text],
+form > button {
+  display: inline;
+  border-radius: 25px;
+  border: none;
+}
+
+form > input[type=text] {
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-bottom: 1em;
+  width: 350px;
+  border: 2px solid var(--pale-blue);
+}
+
+form > button {
+  padding: 10px 0;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  margin-left: 0.3em;
+}
+
+form > span {
+  display: none;
+  text-align: left;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--lightred);
+  margin-left: 2em;
+}
+
+.error {
+  border: 2px solid var(--lightred);
+}
+
+.illustration {
+  width: 50%;
+}
+
+.logo {
+  margin-bottom: 2em;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 3em 3em; 
+}
+
+.social > div {
+  margin-left: 1em;
+}
+
+.fa-brands {
+  color: var(--blue);
+}
+
+.footer {
+  color: var(--gray);
+}
+
+@media screen and (max-width: 720px) { 
+  
+  .logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 0.7em;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+  }
+
+  form > input[type=text],
+  form > button {
+    display: block;
+    width: 100%;
+  }
+
+}
